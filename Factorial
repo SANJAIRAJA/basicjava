@@ -4,17 +4,14 @@ public class factorial {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int number = 60;
+		int num = 60;
 
-	    System.out.print("Factors of " + number + " are: ");
-
-	    // loop runs from 1 to 60
-	    for (int i = 1; i <= number; ++i) {
-
-	      // if number is divided by i
-	      // i is the factor
-	      if (number % i == 0) {
-	        System.out.print(i + " ");
+	    System.out.print("Factors of " + num + " is ");
+	  
+	    for (int i = 1; i <= num; ++i) {
+	  
+	      if (num % i == 0) {
+	        System.out.print(i);
 	        
 	        }
 	    }
