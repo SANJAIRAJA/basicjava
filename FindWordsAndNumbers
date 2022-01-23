@@ -1,0 +1,41 @@
+package arrayoperations;
+
+import java.util.Scanner;
+
+public class charfind {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		String a;
+		int cnum=0,calph=0;
+		boolean flag=false;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter a word with alphabet and numbers");
+		a=sc.nextLine();
+		for(int i=0;i<a.length();i++)
+{
+	char ch=a.charAt(i);
+	if(ch>='A'&& ch <= 'Z'|| ch>='a'&& ch<='z')
+	{
+		flag = true;
+	}
+	else if(ch>='0' && ch<='9')
+	{
+		System.out.println("String has Only Numeric");
+		cnum++;
+	}
+if(flag ==true)
+{
+	System.out.println("String has Only Alphabets");
+	calph++;
+	
+}
+
+}
+	calph=calph-cnum;
+	System.out.println("count of  numeric value is :"+cnum);
+	System.out.println("count of alphabet is :"+calph);
+	}
+	
+
+}
