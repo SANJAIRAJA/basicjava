@@ -1,0 +1,82 @@
+package promaven;
+
+import static org.junit.Assert.*;
+
+import org.junit.After;
+import org.junit.AfterClass;
+import org.junit.Before;
+import org.junit.Test;
+
+public class Mytesttest {
+
+	
+	@Test
+	public void test1()
+	{
+     int a=1;
+     int b=1;
+     int c=a+b;
+     assertEquals(2,c);
+     System.out.println(c);
+	}
+	@Test
+	public void test2()
+	{
+     int a=1;
+     int b=1;
+     int c=a-b;
+     assertEquals(0,c);
+     System.out.println(c);
+	}
+	@Test
+	public void test3()
+	{
+     int a=2;
+     int b=2;
+     int c=a*b;
+     assertEquals(4,c);
+     System.out.println(c);
+	}
+	@Test
+	public void test4()
+	{
+     int a=1;
+     int b=1;
+     int c=a/b;
+     assertEquals(1,c);
+     System.out.println(c);
+	}
+	@Test
+	public void test5()
+	{
+		String a="Hi";
+		String b="Hello";
+		String c=a.concat(b);
+		assertEquals("HiHello",c);
+	}
+	@AfterClass
+	public static void abc() {
+		System.out.println("After all methods");
+		
+	}
+	@After
+	public void afterMethod()
+	{
+		System.out.println(" After annotation Method (refersh page)");
+	}
+	@Before
+	public void beforeMethod()
+	{
+		System.out.println("Before annotation Method(referesh page)");
+	}
+	@Test(expected = ArithmeticException.class)
+	public void testException()
+	{
+		int a=10/0;
+	}
+  @Test(timeout=500)
+  public void timeOut()
+  {
+	  int a=0;
+  }
+}
