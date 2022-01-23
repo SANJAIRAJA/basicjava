@@ -1,0 +1,53 @@
+import java.util.Scanner;
+
+
+
+	class Employee{
+		String name;
+		int emp_id;
+		int exp_year;
+		int age;
+		String gender;
+		
+	void input()
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter your detailes");
+		System.out.println("Enter your name");
+		name=sc.nextLine();
+		System.out.println("Enter your employee id");
+		emp_id=sc.nextInt();
+		System.out.println("Enter your experience year");
+		exp_year=sc.nextInt();
+		System.out.println("Enter your age");
+		age=sc.nextInt();
+		System.out.println("Enter Gender");
+		gender=sc.nextLine();
+		
+		
+	}
+	void display()
+	{
+		System.out.println("Name = " +name);
+		System.out.println("emp_id = " +emp_id);
+		System.out.println("experience year = " +exp_year);
+		System.out.println("Age = " +age);
+		System.out.println("Gender = "+gender);
+		
+	}
+	}
+	public class EmployeeDetailes {
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Employee arr[]=new Employee[6];
+		for(int i=0;i<5;i++)
+		{
+			arr[i]=new Employee();
+			arr[i].input();
+			arr[i].display();
+		}
+			
+	}
+
+	}
+	
