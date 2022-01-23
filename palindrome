@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class palindrome {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method st
+		int length;
+		String name,dupname="";
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the name");
+		name=sc.nextLine();
+		length=name.length();
+		for(int i=length-1;i>=0;i--)
+		{
+			dupname=dupname+name.charAt(i);
+		}
+			if(name.equals(dupname))
+			{
+				System.out.println("Entered name is Palindrome");
+			}
+			else
+			{
+				System.out.println("Entered name is not Palindrome");
+			}
+		
+		
+	}
+
+}
